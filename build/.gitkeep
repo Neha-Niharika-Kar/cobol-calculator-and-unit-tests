@@ -1,0 +1,2 @@
+# This file ensures the build directory is tracked by git
+# Build artifacts will be generated here during compilation

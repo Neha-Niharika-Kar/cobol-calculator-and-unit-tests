@@ -1,5 +1,6 @@
 # Build artifacts
-build/
+build/*
+!build/.gitkeep
 *.o
 *.so
 *.dylib
@@ -10,11 +11,11 @@ build/
 *.exe
 *.out
 
-# Test reports (optional - you may want to commit these)
-reports/results/*.log
-reports/results/test-report-*.txt
-reports/coverage/*.gcov
-reports/coverage/*.html
+# Test reports - keep directory structure but ignore generated files
+reports/results/*
+!reports/results/.gitkeep
+reports/coverage/*
+!reports/coverage/.gitkeep
 
 # macOS
 .DS_Store
