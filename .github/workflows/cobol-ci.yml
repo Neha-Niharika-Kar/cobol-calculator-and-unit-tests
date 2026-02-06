@@ -41,7 +41,9 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: test-results
-        path: reports/results/
+        path: |
+          reports/results/*.txt
+          reports/results/*.log
         if-no-files-found: warn
     
     - name: Upload build logs
@@ -57,8 +59,8 @@ jobs:
       run: |
         echo "## Test Results" >> $GITHUB_STEP_SUMMARY
         echo "" >> $GITHUB_STEP_SUMMARY
-        if [ -f reports/results/test-report-*.txt ]; then
+        if ls reports/results/test-report-*.txt 1> /dev/null 2>&1; then
           tail -20 reports/results/test-report-*.txt >> $GITHUB_STEP_SUMMARY
+        else
+          echo "No test reports found" >> $GITHUB_STEP_SUMMARY
         fi
-
-# Made with Bob
