@@ -1,0 +1,15 @@
+# COBOL Calculator Test Data - Error Cases
+# Format: TestID|Operand1|Operand2|Operation|ExpectedResult|ExpectedStatus
+# Operations: A=Add, S=Subtract, M=Multiply, D=Divide
+
+# Division by Zero Tests
+DIV-009|10.00|0.00|D|0.00|DIVIDE-BY-ZERO
+DIV-012|100.00|0.00|D|0.00|DIVIDE-BY-ZERO
+DIV-013|-50.00|0.00|D|0.00|DIVIDE-BY-ZERO
+DIV-014|0.00|0.00|D|0.00|DIVIDE-BY-ZERO
+
+# Invalid Operation Code Tests
+ERR-001|10.00|5.00|X|0.00|ERROR
+ERR-002|10.00|5.00|Z|0.00|ERROR
+ERR-003|10.00|5.00|1|0.00|ERROR
+ERR-004|10.00|5.00| |0.00|ERROR

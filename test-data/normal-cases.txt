@@ -1,0 +1,27 @@
+# COBOL Calculator Test Data - Normal Cases
+# Format: TestID|Operand1|Operand2|Operation|ExpectedResult|ExpectedStatus
+# Operations: A=Add, S=Subtract, M=Multiply, D=Divide
+
+# Addition Tests - Normal Cases
+ADD-001|5.00|3.00|A|8.00|SUCCESS
+ADD-002|10.00|0.00|A|10.00|SUCCESS
+ADD-003|100.50|25.75|A|126.25|SUCCESS
+ADD-004|0.00|0.00|A|0.00|SUCCESS
+
+# Subtraction Tests - Normal Cases
+SUB-001|10.00|3.00|S|7.00|SUCCESS
+SUB-002|5.00|5.00|S|0.00|SUCCESS
+SUB-003|100.00|25.50|S|74.50|SUCCESS
+SUB-004|50.00|0.00|S|50.00|SUCCESS
+
+# Multiplication Tests - Normal Cases
+MUL-001|5.00|3.00|M|15.00|SUCCESS
+MUL-002|10.00|0.00|M|0.00|SUCCESS
+MUL-003|7.50|2.00|M|15.00|SUCCESS
+MUL-004|12.25|4.00|M|49.00|SUCCESS
+
+# Division Tests - Normal Cases
+DIV-001|10.00|2.00|D|5.00|SUCCESS
+DIV-002|15.00|3.00|D|5.00|SUCCESS
+DIV-003|100.00|4.00|D|25.00|SUCCESS
+DIV-004|7.50|2.50|D|3.00|SUCCESS
