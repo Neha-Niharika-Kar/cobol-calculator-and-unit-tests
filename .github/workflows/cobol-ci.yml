@@ -42,6 +42,7 @@ jobs:
       with:
         name: test-results
         path: reports/results/
+        if-no-files-found: warn
     
     - name: Upload build logs
       if: always()
@@ -49,6 +50,7 @@ jobs:
       with:
         name: build-logs
         path: build/*.log
+        if-no-files-found: warn
     
     - name: Display test summary
       if: always()
