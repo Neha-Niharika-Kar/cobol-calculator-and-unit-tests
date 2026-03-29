@@ -279,29 +279,7 @@ chmod +x build.sh test-runner.sh
    - Check console output
    - Review `reports/results/` for detailed logs
 
-## 🤝 Contributing
-
-This is a demonstration project showcasing COBOL unit testing practices. Feel free to:
-- Add more test cases
-- Implement additional operations
-- Enhance error handling
-- Improve documentation
-
 ## 📄 License
 
 This project is created for educational purposes.
-
-## 👤 Author
-
-**Neha Niharikakar**
 - Implementation Date: 2026-02-06
-- Focus: Modern COBOL development with comprehensive testing
-
-## 🙏 Acknowledgments
-
-- GnuCOBOL team for the excellent open-source compiler
-- COBOL community for best practices and patterns
-
----
-
-**Ready to test!** Install GnuCOBOL and run `./build.sh` to get started! 🚀
